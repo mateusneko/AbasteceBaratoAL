@@ -1,0 +1,87 @@
+﻿@page
+@model AbasteceBarato.Pages.ConsultaSefazModel
+@{
+    ViewData["Title"] = "Consulta SEFAZ";
+}
+
+<h2>Preço dos Combustíveis</h2>
+<p>
+    Consulte o preço do combustível em Alagoas com dados obtidos diretamente da Sefaz-AL.
+</p>
+
+<form method="post">
+      <div class="form form-group">
+        <label for="tipoCombustivel" style="padding-bottom: 5px">Tipo de Combustível:</label>
+        <select id="tipoCombustivel" asp-for="TipoCombustivel" class="form-select">
+            <option value="1" selected>Selecione o tipo de combustível...</option>  
+            @foreach (var tipo in Model.TiposCombustivel)
+            {
+                <option value="@tipo.Value">@tipo.Text</option>
+            }
+        </select>
+
+        <label for="raioDistancia" style="padding-bottom: 5px">Raio de Distância (Km):</label>
+        <select id="raioDistancia" asp-for="RaioDistancia" name="RaioDistancia" class="form-select">
+            <option value="1">Selecione o raio de distância...</option>
+            @for (var i = 1; i <= 15; i++)
+            {
+                <option value=@i.ToString()>@i.ToString()</option>
+            }
+        </select>
+       
+       
+        <div class="form form-group" style="padding-top: 5px">
+        <button type="submit" class="btn btn-info" id="botaoSubmit">Consultar Preços</button>
+        </div>
+    </div>
+</form>
+
+
+@if (Model.PrecoCombustiveis != null && Model.PrecoCombustiveis.Any())
+{
+    <span class="badge rounded-pill bg-success">
+        @Model.PrecoCombustiveis.Count.ToString() Postos Encontrados
+    </span>
+
+    <table class="table table-responsive table-striped text-center">
+        <thead>
+            <tr>
+                <th scope="col">N°</th>
+                <th>Produto</th>
+                <th>Valor Última NFe</th>
+                <th>Data Última NFe</th>
+                <th>Estabelecimento</th>
+                <th>Endereço</th>
+                <th>Bairro</th>
+                <th>Abrir no Mapa</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.PrecoCombustiveis.Count; i++)
+            {
+                
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@Model.PrecoCombustiveis[i].DescricaoProduto</td>
+                    <td>@Model.PrecoCombustiveis[i].ValorUltimaVenda.Value.ToString("c2") </td>
+                    <td>@DateTime.Parse(Model.PrecoCombustiveis[i].DataEmissaoUltimaVenda).ToString("dd-MM-yyyy HH:mm")</td>
+                    <td>@Model.PrecoCombustiveis[i].NomeFantasia</td>
+                    <td>@Model.PrecoCombustiveis[i].NomeLogradouro, @Model.PrecoCombustiveis[i].NumeroImovel</td>
+                    <td>@Model.PrecoCombustiveis[i].NomeBairro</td>
+                    <td>
+                   <a href="@Html.Raw($"https://www.google.com.br/maps/@{Model.PrecoCombustiveis[i].NumLatitude},{Model.PrecoCombustiveis[i].NumLongitude}")"> link</a>
+                        
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (Model.PrecoCombustiveis == null)
+{
+    <p>Nenhum dado de preço disponível.</p>
+}
+@{
+   
+  
+}
