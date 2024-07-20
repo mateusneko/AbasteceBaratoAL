@@ -175,16 +175,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contato
-# Contato
 
-* LinkedIn: [Mateus de Andrade](https://www.linkedin.com/in/mateus-deandrade/)
+* ![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white): [Mateus de Andrade](https://www.linkedin.com/in/mateus-deandrade/)
 
 
 # Link do Projeto
 
-[https://github.com/seu_username/nome_do_repositorio](https://github.com/mateusneko/AbasteceBaratoAL/)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/mateusneko/AbasteceBaratoAL/)
+* Project Link:  ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white): [https://github.com/mateusneko/AbasteceBaratoAL/](https://github.com/mateusneko/AbasteceBaratoAL/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
