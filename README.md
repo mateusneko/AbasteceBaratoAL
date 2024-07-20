@@ -119,12 +119,7 @@ Siga as instruções abaixo para darmos início ao projeto
    ```sh
    dotnet add package Microsoft.EntityFrameworkCore
    ```
-    ```sh
-   dotnet add package Microsoft.EntityFrameworkCore.Tools
-   ```
-    ```sh
-   dotnet add package Microsoft.EntityFrameworkCore.Design
-   ```
+   
 4. Enter your ApiToken in `appsettings.json`
    ```js
     ApiToken: "ENTER YOUR API";
