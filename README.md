@@ -101,9 +101,9 @@ Utilizaremos também, a linguagem de programação C# e Frameworks como o Entity
 * ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Frameworks
+
+## Frameworks
 * ![Entity Framework Core](https://img.shields.io/badge/Entity%20Framework%20Core-512BD4?style=for-the-badge&logo=dot-net&logoColor=white)
 
 ### Iniciando o projeto
