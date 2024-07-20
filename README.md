@@ -86,9 +86,15 @@ Lembre-se de exigir sua NF pois é com ela que garantiremos combustível de qual
 
 
 
-### Built With
+### Criado com
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Para criação deste projeto utilizaremos ferramentas como:
+* Microsoft Visual Studio;
+* Visual Studio Code;
+* Ou outra IDE/Editor de código de sua preferência.
+
+Utilizaremos também, a linguagem de programação C# e Frameworks como o Entity Framework Core. É desejável que você saiba os conceitos básicos para criação de páginas ASP.NET Core utilizando razor pages.
+
 # Tecnologias
 
 * ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-5C2D91?style=for-the-badge&logo=dot-net&logoColor=white)
@@ -100,32 +106,21 @@ This section should list any major frameworks/libraries used to bootstrap your p
 # Frameworks
 * ![Entity Framework Core](https://img.shields.io/badge/Entity%20Framework%20Core-512BD4?style=for-the-badge&logo=dot-net&logoColor=white)
 
-<!-- GETTING STARTED -->
-## Getting Started
+### Iniciando o projeto
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Siga as instruções abaixo para darmos início ao projeto
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Solicite sua API KEY [https://example.com](https://example.com)
+1. Solicite seu Api Token da Sefaz AL [https://economizaalagoas.sefaz.al.gov.br/desenvolvedor.htm](https://economizaalagoas.sefaz.al.gov.br/desenvolvedor.htm) com o Token em "mãos";
 2. Clone o repositório
    ```sh
    git clone https://github.com/mateusneko/AbasteceBaratoAL.git
    ```
-3. Install NPM packages
+3. Instale o Entity Framework Core
    ```sh
-   npm install
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
    ```
 4. Enter your ApiToken in `appsettings.json`
    ```js
