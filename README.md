@@ -154,7 +154,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Link do Projeto
 
 
-* Project Link:  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mateusneko/AbasteceBaratoAL/)
+*[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mateusneko/AbasteceBaratoAL/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
