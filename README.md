@@ -42,24 +42,22 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#sobre-o-projeto">Sobre o Projeto</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#ferramentas">Ferramentas</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#iniciando-o-projeto">Iniciando o Projeto</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#pre-requisitos">Pré Requisitos</a></li>
+        <li><a href="#tecnolocias">Tecnologias</a></li>
       </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    </li>       
+    <li><a href="#contribuindo">Contribuições</a></li>
+    <li><a href="#license">Licença</a></li>
+    <li><a href="#contato">Contato</a></li>
+    
   </ol>
 </details>
 
@@ -72,7 +70,7 @@
 
 Projeto Abastece Barato Alagoas
 
-Here's why:
+Informações:
 * Pesquisa preços dos combustíveis no Estado de Alagoas;
 * Pesquisa realizada em tempo real com base na localização do usuário;
 * Dados precisos e consistentes pois vem diretamente da API da Sefaz Alagoas.
@@ -86,7 +84,7 @@ Lembre-se de exigir sua NF pois é com ela que garantiremos combustível de qual
 
 
 
-### Criado com
+### Ferramentas
 
 Para criação deste projeto utilizaremos ferramentas como:
 * Microsoft Visual Studio;
@@ -106,7 +104,7 @@ Utilizaremos também, a linguagem de programação C# e Frameworks como o Entity
 ## Frameworks
 * ![Entity Framework Core](https://img.shields.io/badge/Entity%20Framework%20Core-512BD4?style=for-the-badge&logo=dot-net&logoColor=white)
 
-### Iniciando o projeto
+## Iniciando o projeto
 
 Siga as instruções abaixo para darmos início ao projeto
 
@@ -168,30 +166,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 
-# Link do Projeto
+## Link do Projeto
 
 
-* Project Link:  ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white): [https://github.com/mateusneko/AbasteceBaratoAL/](https://github.com/mateusneko/AbasteceBaratoAL/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* Project Link:  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mateusneko/AbasteceBaratoAL/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 
 
