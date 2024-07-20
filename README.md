@@ -117,10 +117,13 @@ Siga as instruções abaixo para darmos início ao projeto
    ```
 3. Instale o Entity Framework Core
    ```sh
-dotnet add package Microsoft.EntityFrameworkCore
-dotnet add package Microsoft.EntityFrameworkCore.Tools
-dotnet add package Microsoft.EntityFrameworkCore.Design
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+   dotnet add package Microsoft.EntityFrameworkCore
+   ```
+    ```sh
+   dotnet add package Microsoft.EntityFrameworkCore.Tools
+   ```
+    ```sh
+   dotnet add package Microsoft.EntityFrameworkCore.Design
    ```
 4. Enter your ApiToken in `appsettings.json`
    ```js
@@ -131,14 +134,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTRIBUTING -->
