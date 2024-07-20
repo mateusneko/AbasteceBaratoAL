@@ -118,6 +118,7 @@ Siga as instruções abaixo para darmos início ao projeto
 3. Instale o Entity Framework Core
    ```sh
    dotnet add package Microsoft.EntityFrameworkCore
+   dotnet add package Microsoft.EntityFrameworkCore.Tools
    ```
    
 4. Enter your ApiToken in `appsettings.json`
