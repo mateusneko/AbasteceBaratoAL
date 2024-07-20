@@ -97,7 +97,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+# Frameworks
+* ![Entity Framework Core](https://img.shields.io/badge/Entity%20Framework%20Core-512BD4?style=for-the-badge&logo=dot-net&logoColor=white)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -117,8 +118,8 @@ This is an example of how to list things you need to use the software and how to
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Solicite sua API KEY [https://example.com](https://example.com)
+2. Clone o repositório
    ```sh
    git clone https://github.com/mateusneko/AbasteceBaratoAL.git
    ```
@@ -126,9 +127,9 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Enter your ApiToken in `appsettings.json`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+    ApiToken: "ENTER YOUR API";
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
