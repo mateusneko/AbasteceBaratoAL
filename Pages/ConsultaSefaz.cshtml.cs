@@ -18,8 +18,10 @@ namespace AbasteceBarato.Pages
         [BindProperty]
         public string RaioDistancia { get; set; }
         public List<FuelPrice> PrecoCombustiveis { get; set; } = new List<FuelPrice>();
+       
 
         public const string ApiUrl = "http://api.sefaz.al.gov.br/sfz_nfce_api/api/public/consultarPrecosCombustivel";
+
 
         public ConsultaSefazModel(IConfiguration configuration)
         {
@@ -66,6 +68,8 @@ namespace AbasteceBarato.Pages
                     string jsonParameters = JsonConvert.SerializeObject(parameters);
                     var content = new StringContent(jsonParameters, Encoding.UTF8, "application/json");
                     HttpResponseMessage response = await client.PostAsync(ApiUrl, content);
+
+                   
 
                     if (response.IsSuccessStatusCode)
                     {

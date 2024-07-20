@@ -2,6 +2,7 @@
 @model AbasteceBarato.Pages.ConsultaSefazModel
 @{
     ViewData["Title"] = "Consulta SEFAZ";
+
 }
 
 <h2>Preço dos Combustíveis</h2>
@@ -9,11 +10,12 @@
     Consulte o preço do combustível em Alagoas com dados obtidos diretamente da Sefaz-AL.
 </p>
 
+
 <form method="post">
-      <div class="form form-group">
+    <div class="form form-group">
         <label for="tipoCombustivel" style="padding-bottom: 5px">Tipo de Combustível:</label>
         <select id="tipoCombustivel" asp-for="TipoCombustivel" class="form-select">
-            <option value="1" selected>Selecione o tipo de combustível...</option>  
+            <option value="1" selected>Selecione o tipo de combustível...</option>
             @foreach (var tipo in Model.TiposCombustivel)
             {
                 <option value="@tipo.Value">@tipo.Text</option>
@@ -28,10 +30,10 @@
                 <option value=@i.ToString()>@i.ToString()</option>
             }
         </select>
-       
-       
+
+
         <div class="form form-group" style="padding-top: 5px">
-        <button type="submit" class="btn btn-info" id="botaoSubmit">Consultar Preços</button>
+            <button type="submit" class="btn btn-info" id="botaoSubmit">Pesquisar</button>
         </div>
     </div>
 </form>
@@ -53,35 +55,27 @@
                 <th>Estabelecimento</th>
                 <th>Endereço</th>
                 <th>Bairro</th>
-                <th>Abrir no Mapa</th>
+                
             </tr>
         </thead>
         <tbody>
             @for (int i = 0; i < Model.PrecoCombustiveis.Count; i++)
             {
-                
                 <tr>
                     <td>@(i + 1)</td>
-                    <td>@Model.PrecoCombustiveis[i].DescricaoProduto</td>
+                    <td>@Model.PrecoCombustiveis[i].DescricaoProduto.ToUpper()</td>
                     <td>@Model.PrecoCombustiveis[i].ValorUltimaVenda.Value.ToString("c2") </td>
                     <td>@DateTime.Parse(Model.PrecoCombustiveis[i].DataEmissaoUltimaVenda).ToString("dd-MM-yyyy HH:mm")</td>
                     <td>@Model.PrecoCombustiveis[i].NomeFantasia</td>
-                    <td>@Model.PrecoCombustiveis[i].NomeLogradouro, @Model.PrecoCombustiveis[i].NumeroImovel</td>
-                    <td>@Model.PrecoCombustiveis[i].NomeBairro</td>
-                    <td>
-                   <a href="@Html.Raw($"https://www.google.com.br/maps/@{Model.PrecoCombustiveis[i].NumLatitude},{Model.PrecoCombustiveis[i].NumLongitude}")"> link</a>
-                        
-                    </td>
+                    <td>@Model.PrecoCombustiveis[i].NomeLogradouro.ToUpper(), @Model.PrecoCombustiveis[i].NumeroImovel</td>
+                    <td>@Model.PrecoCombustiveis[i].NomeBairro.ToUpper()</td>                   
                 </tr>
             }
         </tbody>
     </table>
 }
+
 else if (Model.PrecoCombustiveis == null)
 {
     <p>Nenhum dado de preço disponível.</p>
-}
-@{
-   
-  
 }
