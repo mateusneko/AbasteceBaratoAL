@@ -91,7 +91,8 @@ Utilizaremos também, a linguagem de programação C# e Frameworks como o Entity
 
 Siga as instruções abaixo para darmos início ao projeto
 
-1. Solicite seu Api Token da Sefaz AL [https://economizaalagoas.sefaz.al.gov.br/desenvolvedor.htm](https://economizaalagoas.sefaz.al.gov.br/desenvolvedor.htm) com o Token em "mãos";
+1. API Sefaz [https://www.sefaz.al.gov.br/api/#api-nfce-consultarPrecosCombustivel](https://www.sefaz.al.gov.br/api/#api-nfce-consultarPrecosCombustivel).
+Solicite seu Api Token da Sefaz AL [https://economizaalagoas.sefaz.al.gov.br/desenvolvedor.htm](https://economizaalagoas.sefaz.al.gov.br/desenvolvedor.htm) com o Token em "mãos";
 2. Clone o repositório
    ```sh
    git clone https://github.com/mateusneko/AbasteceBaratoAL.git
